@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/imageuser"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/image1"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/ratebar"
+            android:layout_alignTop="@+id/imageuser"
+            android:text="name" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageuser"
+            android:layout_centerHorizontal="true"
+            android:text="is watching" />
+
+        <TextView
+            android:id="@+id/movname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/imageuser"
+            android:layout_marginEnd="67dp"
+            android:text="movname" />
+
+        <ImageView
+            android:id="@+id/imagemovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="79dp"
+            android:src="@drawable/ic_launcher_background" />
+
+        <RatingBar
+            android:id="@+id/ratebar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text5"
+            android:layout_marginTop="-104dp"
+            android:layout_toStartOf="@+id/movname"
+            android:numStars="10"
+            android:rating="5" />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="58dp"
+            android:layout_height="51dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="71dp"
+            android:layout_marginStart="14dp"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/name"
+            android:layout_marginBottom="104dp"
+            android:text="Rate this movie" />
+
+        <EditText
+            android:id="@+id/review"
+            android:layout_width="241dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratebar"
+            android:layout_marginStart="-11dp"
+            android:layout_toEndOf="@+id/name"
+            android:background="@drawable/box"
+            android:ems="10"
+            android:hint="   Write a review..."
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/film"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="197dp"
+            android:layout_toStartOf="@+id/name"
+            android:text="film" />
+
+        <TextView
+            android:id="@+id/language"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/location"
+            android:layout_alignTop="@+id/film"
+            android:text="(Language)" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/film"
+            android:layout_marginEnd="111dp"
+            android:text="(2D)" />
+
+        <TextView
+            android:id="@+id/genre"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/film"
+            android:layout_toStartOf="@+id/name"
+            android:text="genre" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="33dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/ratebar"
+            android:layout_marginTop="43dp"
+            android:text="at" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/text2"
+            android:layout_centerHorizontal="true"
+            android:text="Location" />
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:text="106k" />
+
+        <TextView
+            android:id="@+id/text8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/review"
+            android:text="50k" />
+
+        <TextView
+            android:id="@+id/text9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/text1"
+            android:text="Reviews" />
+
+        <TextView
+            android:id="@+id/texttap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="14dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:text="Tap to see all reviews" />
+
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/film"
+            android:layout_marginEnd="24dp"
+            android:text="8/10" />
+
+        <TextView
+            android:id="@+id/text7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="44dp"
+            android:text="Watched" />
+
+        <ImageView
+            android:id="@+id/imagestar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/film"
+            android:layout_toStartOf="@+id/rate"
+            android:src="@android:drawable/star_big_on" />
+
+        <HorizontalScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="166dp">
+
+            <LinearLayout
+                android:id="@+id/gallery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
